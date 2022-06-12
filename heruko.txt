@@ -1,4 +1,0 @@
-=> Heroku:- Heroku is a cloud plateform that enables developers to build, run and
-operate applications entirely in the cloud. We can deploye our web application in minimum time. 
-
-
