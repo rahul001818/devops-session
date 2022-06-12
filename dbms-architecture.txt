@@ -1,0 +1,17 @@
+>> DBMS Architecture :- The design of a DBMS depends on its architecture. It helps in design, development, implementation and maintenance of a database.
+
+1.> One Tier => In single or one tier architecture, the database is directly available to the user. The client, server and database all reside on the same machine.
+                                              Database user -----------------------> Database system
+Advantage— Fast for a single user because communication with another system is not necessary.
+Disadvantage— Completely unscalable. Only one user can access the system at a given time via the local client.
+
+2.> Two Tier or client server architecture or multi tier architecture => Here tier defines layers. In 2 tier, we have 2 layers client layer and database server. In client layers suppose we have a api or interface. API(interface like JDBS & ODBC) send the request to Database server and after processing the requiest it gives response to client.
+Advantage - Easy to maintain and modification is bit easy and Communication is very fast.
+Disadvantage - Scalability (not handle multiple users at a same time), Security and It is very cost effective.
+
+3.> Three Tier or multi tier architecture => In 3 tier, we have 3 layers client layer, Business layer and database server. In client layers suppose we have a api or interface and Business layer or application server is like a intermediater. All the requests by client applications are process here. After tha it's send the request to Database server. Here data receive in machine level or low level language by business layer. After that it's send the response to client layers.
+Advantage - Scalability (handle multiple users by business layer or execure all the queries), Security, High performance, lightweight, persistent object, Easy to maintain & modification and Better to re-use.
+Disadvantage - The client does not maintain a persistent database connection.
+               A separate proxy server may be required.
+               Network traffic will be increased if a separate proxy server is used.
+
